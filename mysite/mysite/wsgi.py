@@ -20,5 +20,8 @@ application = get_wsgi_application()
 from os.path import join,dirname,abspath
 import sys
 
-PROJECT_DIR = dirname(dirname(abspath(__file__)))
-sys.path.insert(0,PROJECT_DIR)
+
+# PROJECT_DIR = dirname(dirname(abspath(__file__)))
+# sys.path.insert(0,PROJECT_DIR)
+
+sys.path.append('/home/heichi/prj/django1/mysite')
