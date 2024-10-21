@@ -18,7 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path("", include("polls.urls")),
+    #path("", 'index.html', name='home'),
+    path('api/', include('api.urls')),
+
+    path('myapp/', include('myapp.urls')),
     path("polls/", include("polls.urls")),
     path('admin/', admin.site.urls),
 ]
